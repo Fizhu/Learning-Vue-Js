@@ -11,7 +11,7 @@
     "@syncfusion/ej2-base": "^18.1.53",
     "@syncfusion/ej2-vue-buttons": "^18.1.52",
     "@syncfusion/ej2-vue-lists": "^18.1.53",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vuetify": "^2.2.30"
