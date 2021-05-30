@@ -84,6 +84,22 @@ export default {
     this.load();
   },
   methods: {
+    submitLogin() {
+      let username = this.data.username;
+      let pw = this.data.pw;
+      axios.post(Endpoint.login, {
+        username: username,
+        password: pw
+       })
+      .then(function (response) {
+         //todo handle response
+         console.log("onResponse" + response);
+       })
+    .catch(function (error) {
+        //todo handle error
+        console.log("onError" + error);
+       });
+    }
     load() {
       let url = "https://bus.unila.ac.id/crud/api/v1/getlistbarang.php";
       axios
