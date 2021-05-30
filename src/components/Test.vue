@@ -99,7 +99,18 @@ export default {
         //todo handle error
         console.log("onError" + error);
        });
-    }
+    },
+    postLogin() {
+      repository.login(
+        username = username,
+        password = pw,
+        success = { res =>
+          //todo on succ
+        },
+        failed = { err =>
+          //todo on error
+      );
+    },
     load() {
       let url = "https://bus.unila.ac.id/crud/api/v1/getlistbarang.php";
       axios
